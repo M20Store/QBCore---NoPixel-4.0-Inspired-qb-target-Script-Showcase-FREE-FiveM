@@ -2,4 +2,4 @@
 # drag and replace it easy to go
 # M20 Store
 # https://discord.gg/m20 for more support
-# Preview https://youtu.be/T40WqJbcQgQ?si=qolvsGra2Kch-Zm7
+# [Preview ](https://youtu.be/T40WqJbcQgQ?si=qolvsGra2Kch-Zm7)
