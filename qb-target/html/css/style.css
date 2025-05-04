@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body {
+    overflow: hidden;
+    transform:scale(0.68);
+}
+
+#target-eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size: 2vh;
+    display: none;
+}
+
+#target-label-wrapper {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    left: 52%;
+    width: fit-content;
+    height: fit-content;
+    top: 48.5%;
+}
+
+#target-label {
+    list-style: none;
+    font-size: 1.7vh;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    user-select: none;
+    white-space: nowrap;
+    background-color: #00000000;
+}
+
+#hex::before {
+    position: absolute;
+    margin-top: 28.3%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    content: "";
+    width: 2.5vh;
+    height: 2.5vh;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #08f7c5;
+    background: #08f7c31e;
+    border-image: initial;
+    animation: rotate 2s linear infinite, blink 1s linear infinite;
+    transition: transform 0.5s ease 0s;
+}
+
+#hex.green::before {
+    border-color: #08f7c5; 
+    box-shadow: 0 0 20px #00ffe1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateY(-50%) translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: rgba(8, 247, 197, 1);
+    }
+    50% {
+        border-color: rgb(5, 175, 138);
+    }
+}
